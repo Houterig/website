@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>houterig</title>
-    <meta name="description" content="houterig" />
-    <meta name="keywords" content="houterig" />
+    <title>Houterig</title>
+    <meta name="description" content="Houterig" />
+    <meta name="keywords" content="Houterig" />
+
+    <script src="https://cdn.tailwindcss.com/"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Fraunces&display=swap"
       rel="stylesheet"
     />
+
     <style>
-      html,
       body {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        outline: 0;
-        margin: 0;
-        padding: 0;
-        font-family: "Fraunces";
-        text-align: center;
+        font-family: "Fraunces", sans-serif;
+        font-weight: black;
+      }
+      main > div > div {
+        min-height: 16rem;
       }
     </style>
   </head>
-  <body>
-    <h1>houterig</h1>
+
+  <body class="space-y-16">
+    <header class="py-12">
+      <div class="container h-full mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="text-5xl">houterig</div>
+        <nav>
+          <a href="mailto:info@houterig.nl" target="_blank">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto grid grid md:grid-cols-3 md:grid-rows-4 gap-16">
+        <div class="md:col-span-2 md:row-span-2 bg-stone-100"></div>
+        <div class="md:col-start-3 bg-stone-300"></div>
+        <div class="md:row-span-2 md:col-start-3 md:row-start-2 bg-stone-100"></div>
+        <div class="md:row-span-2 md:row-start-3 bg-stone-200"></div>
+        <div class="md:row-start-3 bg-stone-400"></div>
+        <div class="md:col-span-2 md:col-start-2 md:row-start-4 bg-stone-200"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container mx-auto py-12 flex flex-col md:flex-row justify-end items-center">
+        <nav>
+          <a href="mailto:info@houterig.nl" target="_blank">Contact</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
